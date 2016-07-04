@@ -9,6 +9,10 @@ My vimrc configuration.
 
 `curl https://raw.githubusercontent.com/Xuyuanp/vimrc/master/install.sh | sh`
 
+my install.sh:
+
+`curl https://raw.githubusercontent.com/igotcha/vimrc/master/install.sh | sh`
+
 **warning** Only tested in Mac OS X and Archlinux
 
 ## Windows

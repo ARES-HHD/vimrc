@@ -26,7 +26,7 @@ fi
 # make bundle dir and fetch neobundle
 info "Begin fetching vimrc."
 mkdir -p $VIM_DIR
-git clone https://github.com/Xuyuanp/vimrc $VIM_DIR
+git clone https://github.com/igotcha/vimrc $VIM_DIR
 info "Done."
 
 if [ -s ~/.vimrc ]; then
@@ -40,6 +40,16 @@ info "Don't worry to see some warning like: not found in 'runtimepath': \"autolo
 mkdir -p $BUNDLE_DIR
 git clone https://github.com/Shougo/neobundle.vim $BUNDLE_DIR
 . $BUNDLE_DIR/bin/neoinstall
+
+info "Build YouCompleteMe"
+if [ -f "$VIM_DIR/bundle/YouCompleteMe/install.py"  ]
+then
+    $VIM_DIR/bundle/YouCompleteMe/install.py --gocode-completer
+else
+    info "install YouCompleteMe failure"
+if
+
+
 info "Done."
 
 echo ""

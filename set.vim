@@ -14,7 +14,7 @@ set autoread
 " set autochdir
 
 " Have the mouse enabled all the time:
-set mouse=a
+"set mouse=a "disable mouse
 
 set modifiable
 
@@ -45,8 +45,7 @@ set cmdheight=2
 set nu
 
 " Ignore case when searching
-set ignorecase
-set incsearch
+"set ignorecase
 
 " Set magic on
 set magic
@@ -84,7 +83,7 @@ set shortmess=aoOtTI
 " Turn backup off
 set nobackup
 set nowb
-set noswapfile
+"set noswapfile
 
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set wildignore+=*vim/backups*
