@@ -42,13 +42,7 @@ git clone https://github.com/Shougo/neobundle.vim $BUNDLE_DIR
 . $BUNDLE_DIR/bin/neoinstall
 
 info "Build YouCompleteMe"
-if [ -f "$VIM_DIR/bundle/YouCompleteMe/install.py"  ]
-then
-    $VIM_DIR/bundle/YouCompleteMe/install.py --gocode-completer
-else
-    info "install YouCompleteMe failure"
-if
-
+$VIM_DIR/bundle/YouCompleteMe/install.py --gocode-completer
 
 info "Done."
 
