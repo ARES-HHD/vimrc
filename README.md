@@ -7,13 +7,13 @@ My vimrc configuration.
 
 ## Mac OS X / Linux
 
-`curl https://raw.githubusercontent.com/Xuyuanp/vimrc/master/install.sh | sh`
 
-my install.sh:
+1. `sudo yum groupinstall "Development tools"`
+1. `sudo yum install cmake python-devel`
+1. `curl https://raw.githubusercontent.com/igotcha/vimrc/master/install.sh | sh`
 
-`curl https://raw.githubusercontent.com/igotcha/vimrc/master/install.sh | sh`
-
-**warning** Only tested in Mac OS X and Archlinux
+**warning** Only tested in CentOS7
+**note**: Need Vim 7.3.598 or higher with Python 2 or Python 3 support
 
 ## Windows
 
@@ -23,20 +23,14 @@ my install.sh:
 
 Plugins managed using [NeoBundle](https://github.com/Shougo/neobundle.vim). You can easily install, update or remove plugin with NeoBundle.
 
-## [Neocomplcache](https://github.com/Shougo/neocomplcache.vim) or [Neocomplete](https://github.com/Shougo/neocomplete.vim)
-  Neocomplcache is an amazing autocomplete plugin with additional support for snippets. It can complete simulatiously from the dictionary, buffer, omnicomplete and snippets. This is the one true plugin that brings Vim autocomplete on par with the best editors.
+## YouCompleteMe
 
-  Neocomplete is the next generation completion framework after neocomplcache. It is faster than neocomplcache, but requires Vim 7.3.885+ with Lua enabled.
+  **Key-map**
 
-  **Just keep typing**, it will autocomplete where possible.
+    * `<leader>gc` : GoToDeclaration
+    * `<leader>gf` : GoToDefinition
+    * `<leader>ga` : GoToDefinitionElseDeclaration
 
-  **Key-map**:
-
-  * `<TAB>`:autoselect.
-
-  * `<C-N>/<C-P>`:select next/prev.
-
-  * `<C-K>`:complete snippets.
 
 ## [NERDTree](https://github.com/scrooloose/nerdtree) with [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 
